@@ -1,0 +1,65 @@
+main {
+  background-image: url(/images/splash_background.png);
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+
+.grid_2-1 {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  row-gap: 50px;
+  margin: 25px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.tekstover {
+  position: relative;
+  text-align: center;
+}
+
+.tekstover figcaption {
+  position: absolute;
+  top: 32%;
+  left: 0%;
+  width: 100%;
+  text-align: center;
+}
+.tekstover button {
+  font-family: "Lato", sans-serif;
+  font-size: 30px;
+  color: black;
+  background-color: rgb(147, 212, 247, 0.8);
+  padding: 40px 0px;
+  width: 100%;
+}
+
+.tekstover button {
+  transition-duration: 0.4s;
+}
+
+.tekstover button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: rgb(147, 212, 247);
+}
+
+@media (min-width: 800px) {
+  .grid_2-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 25px;
+    margin-top: 50px;
+    gap: 50px;
+    margin-inline: 100px;
+  }
+  .tekstover button {
+    font-size: 40px;
+  }
+}

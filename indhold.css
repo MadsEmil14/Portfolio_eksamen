@@ -1,0 +1,59 @@
+main {
+  background-image: url(/images/splash_background.png);
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+
+.grid_6-1 {
+  display: flex;
+  flex-direction: column;
+  margin: 25px;
+}
+h1 {
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin-top: 30px;
+  margin-bottom: px;
+}
+
+.col_6-1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+.col_6-2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 110px;
+  gap: 20px;
+}
+
+@media (min-width: 800px) {
+  .grid_6-1 {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 25px;
+    gap: 25px;
+    margin-inline: 100px;
+  }
+
+  .col_6-1 {
+    margin-right: 40px;
+  }
+
+  .col_6-2 {
+    margin-top: 34em;
+    gap: 50px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

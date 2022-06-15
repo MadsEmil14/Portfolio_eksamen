@@ -1,0 +1,74 @@
+main {
+  background-image: url(/images/splash_background.png);
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+
+.grid_5-1 {
+  display: flex;
+  flex-direction: column;
+  margin: 25px;
+}
+h1 {
+  margin-bottom: 30px;
+}
+h2 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.col_5-1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+.col_5-2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 110px;
+  gap: 20px;
+}
+
+.col_5-3 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+@media (min-width: 800px) {
+  .grid_5-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 25px;
+    gap: 25px;
+    margin-inline: 100px;
+  }
+
+  .col_5-1 {
+    margin-right: 40px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .col_5-4 {
+    margin-top: 40px;
+    margin-right: 5px;
+  }
+
+  .col_5-2 {
+    margin-top: 29%;
+  }
+
+  .col_5-3 {
+    margin-top: 29%;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
